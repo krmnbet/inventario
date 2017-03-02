@@ -14,16 +14,19 @@
 		
 		</style>
 <div class="container">
-	<form id="formempleados" action="ajax.php?c=Catalogos&f=almacenaEmpleado<?php echo $funcion;?>" method="post">
+	<form id="formempleados" action="mvc/ajax.php?c=General&f=acceso" method="post">
 <div id="divlogin_container" align="center">
 		<br><br>
 <div id="divlogin">
+<div class="col-xs-3">
+	<img src="imagenes/inventario_Icon.ico" align="center"/>
+</div>
 		 <input
             	class="form-control"
             	placeholder="Escriba su usuario"
             	type="text"
-            	id="txtusuario"
-            	name="txtusuario">
+            	id="usuario"
+            	name="usuario">
          
             <br /><br />
 			<input
@@ -31,7 +34,8 @@
             	placeholder="Contraseña"
          		type="password"
          		AUTOCOMPLETE="off"
-         		id="txtclave">
+         		id="clave"
+         		name="clave">
          	<br /><br />
            
             <input
